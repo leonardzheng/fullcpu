@@ -5,10 +5,11 @@ import (
   "runtime"
   "fmt"
 )
+
 func main() {
-  cpunum := flag.Int("cpunum", 0, "cpunum")
+  cpunum := flag.Int("cpunum", 0, "The number of cores")
   flag.Parse()
-  fmt.Println("cpunum:", *cpunum)
+  fmt.Println("The number of cores:", *cpunum)
   runtime.GOMAXPROCS(*cpunum)
   for i := 0; i < *cpunum - 1; i++ {
     go func() {
