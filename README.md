@@ -8,4 +8,4 @@ A tool loads a specified number of CPU cores to full load
 
 ### for example
     $ ./fullcpu -cpunum 2
-    cpunum: 2
+    The number of cores: 2
