@@ -1,2 +1,11 @@
 # fullcpu
-就是用于测试cpu全负载工作，出于对环境的测试目的而设计。
+
+A tool loads a specified number of CPU cores to full load
+
+## usage
+* go build fullcpu.go
+* ./fullcpu `-cpunum` [numberOfCPUCore]
+
+### for example
+    $ ./fullcpu -cpunum 2
+    The number of cores: 2
